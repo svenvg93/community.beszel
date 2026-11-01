@@ -95,6 +95,14 @@ argument_specs:
           - When V(false), ICMP network monitors only work if the host allows unprivileged ICMP datagram sockets.
           - Requires Beszel v0.20.0 or later.
 
+      agent_package_updates_interval:
+        type: str
+        default: 1h
+        description:
+          - Interval between package update checks by the Beszel binary agent.
+          - Accepts a Go duration such as V(30m) or V(6h). Set to V(0) to disable package update checks.
+          - Requires Beszel v0.21.0 or later.
+
       agent_gpus:
         type: list
         elements: dict

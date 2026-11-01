@@ -37,6 +37,9 @@ agent_smart_interval: 1h
 agent_smart_disks: []
 # Grant the Beszel binary agent the CAP_NET_RAW capability for ICMP network monitors (v0.20.0+)
 agent_icmp: false
+# Interval between package update checks by the Beszel binary agent (v0.21.0+)
+# Set to "0" to disable package update checks
+agent_package_updates_interval: 1h
 # GPU devices to be monitored by the Beszel binary agent
 # Each GPU should be a dict with 'path' and 'type' keys.
 # Example:
